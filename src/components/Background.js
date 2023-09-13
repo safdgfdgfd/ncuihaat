@@ -5,7 +5,7 @@ import { theme } from '../core/theme'
 export default function Background({ children }) {
   return (
     <ImageBackground
-      source={require('../assets/background_dot.png')}
+      source={require('../assets/images/splash.png')}
       resizeMode="repeat"
       style={styles.background}
     >
@@ -20,6 +20,10 @@ const styles = StyleSheet.create({
   background: {
     flex: 1,
     width: '100%',
+    maxWidth: 340,
+    alignItems: 'center',
+    alignSelf: 'center',
+    justifyContent: 'center',
     backgroundColor: theme.colors.surface,
   },
   container: {
